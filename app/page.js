@@ -9,7 +9,7 @@ import NightColors from "./colors/night";
 import React from "react";
 import Style from "./page.style";
 import { FlexGrid, FlexItem } from "flex-item";
-import { ThemeProvider, withTheme } from "styled-components";
+import { ThemeProvider } from "styled-components";
 
 class Page extends React.Component {
   constructor(props) {
@@ -83,4 +83,4 @@ class Page extends React.Component {
   }
 }
 
-module.exports = withTheme(Page);
+module.exports = Page;

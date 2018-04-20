@@ -2,7 +2,7 @@ import Styled from "styled-components";
 
 module.exports = Styled.div`
   &.main-page {
-    background: linear-gradient(135deg, ${props => props.theme.colors.background2} 25%, transparent 25%) -50px 0, linear-gradient(225deg, ${props => props.theme.colors.background2} 25%, transparent 25%) -50px 0, linear-gradient(315deg, ${props => props.theme.colors.background2} 25%, transparent 25%), linear-gradient(45deg, ${props => props.theme.colors.background2} 25%, transparent 25%);  
+    background: linear-gradient(135deg, ${props => props.theme.colors.background2} 25%, transparent 25%) -50px 0, linear-gradient(225deg, ${props => props.theme.colors.background2} 25%, transparent 25%) -50px 0, linear-gradient(315deg, ${props => props.theme.colors.background2} 25%, transparent 25%), linear-gradient(45deg, ${props => props.theme.colors.background2} 25%, transparent 25%);
     background-size: 100px 100px;
     background-color: ${props => props.theme.colors.background};
     height: 100%;
@@ -23,6 +23,8 @@ module.exports = Styled.div`
       top: 12px;
       right: 9px;
       cursor: pointer;
+      user-select: auto;
+      z-index: 99;
 
       .fa-sun, .fa-moon {
         width: 30px;
@@ -50,6 +52,7 @@ module.exports = Styled.div`
       width: 100%;
       background: ${props => props.theme.colors.background};
       padding: 12px 0;
+      user-select: auto;
 
       .flex-item {
         text-align: center;
