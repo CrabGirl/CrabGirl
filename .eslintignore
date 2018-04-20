@@ -1,1 +1,12 @@
-demo/assets/quill.js
+.DS_Store
+.babelrc
+.eslintrc.js
+.git
+.gitignore
+README.md
+app/assets
+brunch-config.js
+circle.yml
+node_modules
+package.json
+public
