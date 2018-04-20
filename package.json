@@ -12,7 +12,7 @@
     "start": "node_modules/brunch/bin/brunch watch --server",
     "lint": "eslint test demo app",
     "lint:css": "stylelint \"./**/*.style.js\"",
-    "production": "node_modules/.bin/brunch build --production && node_modules/.bin/uglifyjs public/app.js -c warnings=false -m --screw-ie8 -o public/citadel.js --ecma=5 -b beautify=false,ascii_only=true"
+    "production": "node_modules/.bin/brunch build --production && node_modules/.bin/uglifyjs public/app.js -c warnings=false -m --screw-ie8 -o public/app.js --ecma=5 -b beautify=false,ascii_only=true"
   },
   "dependencies": {
     "classnames": "2.2.5",
