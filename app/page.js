@@ -64,7 +64,7 @@ class Page extends React.Component {
             </FlexItem>
           </FlexGrid>
           <div className="footer">
-            <FlexGrid>
+            <FlexGrid maxTabletRow={2} maxMobileRow={2}>
               <FlexItem>
                 <a href="mailto:carolyn.hoffert@gmail.com">
                   <FontAwesomeIcon icon={FaEnvelope} fixedWidth color={theme.colors.text}/>

@@ -60,5 +60,18 @@ module.exports = Styled.div`
         height: 30px;
       }
     }
+
+    @media (max-width: ${props => props.theme.dimensions.tabletBreakpoint}px) {
+      .title {
+        font-size: 48px;
+        font-weight: 300;
+        margin: 25px 0;
+      }
+
+      .main-image {
+        max-width: 300px;
+        max-height: 300px;
+      }
+    }
   }
 `;
