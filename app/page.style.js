@@ -51,6 +51,7 @@ module.exports = Styled.div`
       left: 0;
       width: 100%;
       background: ${props => props.theme.colors.background};
+      border-top: 1px solid ${props => props.theme.colors.textShadow};
       padding: 12px 0;
       user-select: auto;
 
