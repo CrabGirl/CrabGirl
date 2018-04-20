@@ -15,6 +15,9 @@
     "production": "node_modules/.bin/brunch build --production && node_modules/.bin/uglifyjs public/app.js -c warnings=false -m --screw-ie8 -o public/app.js --ecma=5 -b beautify=false,ascii_only=true"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.5",
+    "@fortawesome/fontawesome-free-solid": "^5.0.10",
+    "@fortawesome/react-fontawesome": "0.0.18",
     "classnames": "2.2.5",
     "flex-item": "0.3.2",
     "lodash": "4.17.5",
