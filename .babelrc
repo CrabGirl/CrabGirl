@@ -1,0 +1,17 @@
+{
+  "presets": [
+    [
+      "env", {
+        "modules": false,
+        "targets": {
+          "browsers": ["last 2 versions", "ie >= 11"]
+        }
+      }
+    ],
+    "react"
+  ],
+  "plugins": [
+    "transform-es2015-modules-commonjs",
+    "array-includes"
+  ]
+}

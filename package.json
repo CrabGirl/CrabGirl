@@ -1,0 +1,54 @@
+{
+  "name": "carolyn",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Carolyn Hoffert's portfolio",
+  "author": "mahcloud",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "scripts": {
+    "start": "node_modules/brunch/bin/brunch watch --server",
+    "lint": "eslint test demo app",
+    "lint:css": "stylelint \"./**/*.style.js\"",
+    "production": "node_modules/.bin/brunch build --production && node_modules/.bin/uglifyjs public/app.js -c warnings=false -m --screw-ie8 -o public/citadel.js --ecma=5 -b beautify=false,ascii_only=true"
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "flex-item": "0.3.2",
+    "lodash": "4.17.5",
+    "promise-polyfill": "7.1.0",
+    "prop-types": "15.6.1",
+    "react": "16.2.0",
+    "react-dom": "16.2.0",
+    "react-router": "4.2.0",
+    "react-router-dom": "4.2.2",
+    "styled-components": "3.2.2"
+  },
+  "devDependencies": {
+    "auto-reload-brunch": "2.7.1",
+    "babel-brunch": "6.1.1",
+    "babel-cli": "6.26.0",
+    "babel-eslint": "8.2.2",
+    "babel-plugin-array-includes": "2.0.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "babel-register": "6.26.0",
+    "brunch": "2.10.12",
+    "eslint": "4.18.2",
+    "eslint-config-standard": "11.0.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-node": "6.0.1",
+    "eslint-plugin-promise": "3.7.0",
+    "eslint-plugin-react": "7.7.0",
+    "eslint-plugin-standard": "3.0.1",
+    "stylelint": "9.1.1",
+    "stylelint-config-standard": "18.2.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-config-recommended": "2.1.0",
+    "stylelint-processor-styled-components": "1.3.0",
+    "uglify-es": "3.3.9"
+  }
+}

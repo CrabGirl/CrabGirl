@@ -1,0 +1,24 @@
+machine:
+  node:
+    version: 7.9.0
+
+dependencies:
+  override:
+    - npm install
+
+  cache_directories:
+    - node_modules/
+
+test:
+  override:
+    - npm test
+    - npm run lint
+    - npm run lint:css
+
+deployment:
+  master:
+    branch: master
+    owner: Tazworks
+    commands:
+      - node_modules/.bin/brunch build
+      - node_modules/.bin/firebase deploy --token=$FIREBASE_TOKEN --non-interactive -P default
