@@ -2,7 +2,9 @@ import Styled from "styled-components";
 
 module.exports = Styled.div`
   &.main-page {
-    background: ${props => props.theme.colors.background};
+    background: linear-gradient(135deg, ${props => props.theme.colors.background2} 25%, transparent 25%) -50px 0, linear-gradient(225deg, ${props => props.theme.colors.background2} 25%, transparent 25%) -50px 0, linear-gradient(315deg, ${props => props.theme.colors.background2} 25%, transparent 25%), linear-gradient(45deg, ${props => props.theme.colors.background2} 25%, transparent 25%);  
+    background-size: 100px 100px;
+    background-color: ${props => props.theme.colors.background};
     height: 100%;
     user-select: none;
 
@@ -38,6 +40,24 @@ module.exports = Styled.div`
         height: 100%;
         border-radius: 600px;
         border: 10px solid ${props => props.theme.colors.mainImage};
+      }
+    }
+
+    .footer {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: ${props => props.theme.colors.background};
+      padding: 12px 0;
+
+      .flex-item {
+        text-align: center;
+      }
+
+      .fa-envelope, .fa-twitter {
+        width: 30px;
+        height: 30px;
       }
     }
   }

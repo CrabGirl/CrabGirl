@@ -1,7 +1,9 @@
 import DayColors from "./colors/day";
 import Dimensions from "./dimensions";
+import FaEnvelope from "@fortawesome/fontawesome-free-solid/faEnvelope";
 import FaMoon from "@fortawesome/fontawesome-free-solid/faMoon";
 import FaSun from "@fortawesome/fontawesome-free-solid/faSun";
+import FaTwitter from "@fortawesome/fontawesome-free-brands/faTwitter";
 import FontAwesomeIcon from "@fortawesome/react-fontawesome";
 import NightColors from "./colors/night";
 import React from "react";
@@ -61,6 +63,20 @@ class Page extends React.Component {
               </div>
             </FlexItem>
           </FlexGrid>
+          <div className="footer">
+            <FlexGrid>
+              <FlexItem>
+                <a href="mailto:carolyn.hoffert@gmail.com">
+                  <FontAwesomeIcon icon={FaEnvelope} fixedWidth color={theme.colors.text}/>
+                </a>
+              </FlexItem>
+              <FlexItem>
+                <a href="https://twitter.com/WritingHoffert" target="_blank">
+                  <FontAwesomeIcon icon={FaTwitter} fixedWidth color={theme.colors.text}/>
+                </a>
+              </FlexItem>
+            </FlexGrid>
+          </div>
         </Style>
       </ThemeProvider>
     );
