@@ -4,7 +4,7 @@
 
 ## Link
 
-[Link](https://www.carolynhoffert.com/)
+[Link to site](https://www.carolynhoffert.com/)
 
 ## Installing
 
