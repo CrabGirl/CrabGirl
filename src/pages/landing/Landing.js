@@ -18,14 +18,15 @@ function LandingPage() {
       <div className="smaller-content-section second-section">
         <div className="border-box author">
           <div className="text">
+            <div>About</div>
+            <div className="the">the</div>
             <div>Author</div>
-            <div>Bio</div>
           </div>
           <img src={author}/>
         </div>
         <div className="border-box chapter">
           <div className="text">
-            <div>1st</div>
+            <div><span className="first">1</span><sup>st</sup></div>
             <div>Chapter</div>
           </div>
           <img src={jack}/>
@@ -36,7 +37,7 @@ function LandingPage() {
           <img src={love}/>
           <div className="text">
             <div>Synopsis &</div>
-            <div>Characters</div>
+            <div className="second-line">Characters</div>
           </div>
         </div>
       </div>

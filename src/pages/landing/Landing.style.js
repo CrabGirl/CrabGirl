@@ -62,8 +62,15 @@ export default styled.div({
           fontSize: '42px',
           width: 'calc(50% - 32px)',
           lineHeight: '42px',
-          margin: '42px 16px 0',
+          margin: '28px 16px 0',
           verticalAlign: 'top',
+
+          '.the': {
+            fontSize: '32px',
+            lineHeight: '32px',
+            marginTop: '-6px',
+            marginLeft: '30px',
+          },
         },
 
         img: {
@@ -85,12 +92,17 @@ export default styled.div({
           fontSize: '42px',
           padding: '136px 16px 0',
           lineHeight: '42px',
+
+          '.first': {
+            fontSize: '50px',
+            fontFamily: 'sans-serif',
+          },
         },
 
         img: {
           position: 'absolute',
-          top: 0,
-          right: '-50px',
+          top: '16px',
+          right: '-54px',
           height: '250px',
         },
       },
@@ -98,23 +110,26 @@ export default styled.div({
 
     '.character-section': {
       position: 'relative',
-      marginTop: '64px',
+
 
       '.character': {
-        marginLeft: '50%',
-        width: 'calc(50% - 18px)',
+        marginLeft: '40%',
+        width: 'calc(60% - 18px)',
 
         img: {
           position: 'absolute',
-          top: '-128px',
-          left: '96px',
+          top: '-100px',
+          left: '48px',
           height: '300px',
         },
 
         '.text': {
           fontSize: '42px',
           padding: '16px',
-          textAlign: 'right',
+
+          '.second-line': {
+            textAlign: 'right',
+          },
         },
       },
     },
@@ -125,7 +140,6 @@ export default styled.div({
 
       '.contact': {
         width: '75%',
-        marginTop: '48px',
 
         '.text': {
           fontSize: '48px',
@@ -136,14 +150,14 @@ export default styled.div({
 
         img: {
           position: 'absolute',
-          right: '0',
-          top: '32px',
+          right: 0,
+          top: 0,
           width: '32%',
         },
       },
     },
 
-    '@media (min-width: 800px)': {
+    '@media (min-width: 600px)': {
       '.title': {
         marginTop: '150px',
 
@@ -156,7 +170,7 @@ export default styled.div({
       },
     },
 
-    '@media (max-width: 800px)': {
+    '@media (max-width: 600px)': {
       '.border-box': {
         borderWidth: '6px',
       },
@@ -195,7 +209,12 @@ export default styled.div({
           '.text': {
             fontSize: '28px',
             lineHeight: '24px',
-            marginTop: '26px',
+            marginTop: '16px',
+            marginBottom: '16px',
+
+            '.the': {
+              marginLeft: '16px',
+            },
           },
         },
 
@@ -214,8 +233,9 @@ export default styled.div({
           '.text': {
             fontSize: '28px',
             lineHeight: '24px',
-            marginTop: '26px',
+            marginTop: 0,
             paddingTop: '52px',
+            textAlign: 'center',
           },
         },
       },
@@ -238,25 +258,29 @@ export default styled.div({
             fontSize: '28px',
             lineHeight: '24px',
             marginTop: '36px',
+            textAlign: 'right',
           },
         },
       },
 
       '.contact-section': {
         marginBottom: '32px',
+
         '.contact': {
-          width: '62%',
+          width: 'calc(100% - 12px)',
           marginTop: 0,
           marginLeft: 0,
 
           '.text': {
             fontSize: '28px',
             lineHeight: '42px',
+            textAlign: 'left',
+            paddingLeft: '16px',
           },
 
           img: {
             position: 'absolute',
-            top: 0,
+            top: '8px',
             right: '10%',
             width: '30%',
           },
