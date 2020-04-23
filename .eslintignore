@@ -1,11 +1,10 @@
 .DS_Store
-.babelrc
+babel.config.js
 .eslintrc.js
 .git
 .gitignore
 README.md
-app/assets
-brunch-config.js
+src/assets
 circle.yml
 node_modules
 package.json
