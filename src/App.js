@@ -28,11 +28,16 @@ const globalStyles = css`
   html, body {
     color: #191C1F;
     background-color: #2C3E50;
-    font-family: sans-serif;
+    font-family: Gochi Hand, sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     height: 100%;
+
+    a {
+      color: #191C1F;
+      text-decoration: none;
+    }
 
     #app {
       height: 100%;
@@ -43,7 +48,7 @@ const globalStyles = css`
     }
 
     input, textarea {
-      font-family: sans-serif;
+      font-family: Gochi Hand, sans-serif;
     }
 
     p {
