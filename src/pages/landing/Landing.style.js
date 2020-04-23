@@ -9,11 +9,21 @@ export default styled.div({
     backgroundSize: '100px 100px',
     backgroundColor: '#2C3E50',
 
-    '.title': {
-      position: 'relative',
+    '.content-section': {
+      maxWidth: '800px',
+      width: 'calc(100% - 64px)',
+      margin: '0 auto',
+      padding: '16px 32px',
+    },
+
+    '.border-box': {
       border: '9px solid #191C1F',
       background: `url(${bkg})`,
       backgroundSize: '3px',
+    },
+
+    '.title': {
+      position: 'relative',
       marginTop: '75px',
 
       span: {
@@ -35,11 +45,29 @@ export default styled.div({
       },
     },
 
-    '.content-section': {
-      maxWidth: '800px',
-      width: 'calc(100% - 64px)',
-      margin: '0 auto',
-      padding: '32px',
+    '.contact-section': {
+      position: 'relative',
+
+      '.contact': {
+        width: '45%',
+        marginLeft: '15%',
+        marginTop: '48px',
+
+        span: {
+          display: 'block',
+          fontSize: '48px',
+          lineHeight: '75px',
+          marginBottom: '-5px',
+          textAlign: 'center',
+        },
+
+        img: {
+          position: 'absolute',
+          right: '18%',
+          top: '32px',
+          width: '26%',
+        },
+      },
     },
 
     '@media (min-width: 800px)': {
@@ -56,6 +84,10 @@ export default styled.div({
     },
 
     '@media (max-width: 800px)': {
+      '.border-box': {
+        borderWidth: '6px',
+      },
+
       '.title': {
         span: {
           fontSize: '64px',
@@ -78,6 +110,26 @@ export default styled.div({
           lineHeight: '40px',
           height: '40px',
           paddingBottom: '18px',
+        },
+      },
+
+      '.contact-section': {
+        '.contact': {
+          width: '50%',
+          marginTop: 0,
+          marginLeft: '12%',
+
+          span: {
+            fontSize: '28px',
+            lineHeight: '42px',
+          },
+
+          img: {
+            position: 'absolute',
+            top: 0,
+            right: '13%',
+            width: '30%',
+          },
         },
       },
     },
