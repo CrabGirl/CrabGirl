@@ -1,12 +1,12 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ProfilePage from './pages/profile';
+import LandingPage from './pages/landing';
 
 function Router() {
   return (
     <BrowserRouter>
       <Switch>
-        <Route path="*" component={ProfilePage}/>
+        <Route path="*" component={LandingPage}/>
       </Switch>
     </BrowserRouter>
   );
