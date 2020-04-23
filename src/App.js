@@ -1,6 +1,5 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
-import Layout from './Layout';
 import Router from './Router';
 
 const globalStyles = css`
@@ -53,9 +52,7 @@ function App() {
   return (
     <>
       <Global styles={globalStyles}/>
-      <Layout>
-        <Router/>
-      </Layout>
+      <Router/>
     </>
   );
 }
