@@ -28,7 +28,7 @@ module.exports = (env, argv) => {
       host: 'localhost',
       open: true,
       disableHostCheck: true,
-      port: 3131
+      port: 3139
     },
     module: {
       rules: [

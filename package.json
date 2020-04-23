@@ -1,7 +1,7 @@
 {
-  "name": "carolyn.hoffert.org",
+  "name": "crabgirl.hoffert.org",
   "version": "0.0.1",
-  "description": "Carolyn Hoffert's portfolio",
+  "description": "Crab Girl",
   "author": "Mike Hoffert",
   "scripts": {
     "build": "webpack --env.production && cp _redirects public/",

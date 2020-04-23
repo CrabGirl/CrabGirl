@@ -6,7 +6,7 @@ function Layout({ children }) {
     <LayoutStyle className="layout">
       <header>
         <div className="content-section">
-          <div className="name">Carolyn Hoffert</div>
+          <div className="name">Crab Girl</div>
         </div>
       </header>
       {children}
