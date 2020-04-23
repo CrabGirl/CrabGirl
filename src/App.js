@@ -1,8 +1,20 @@
 import React from 'react';
 import { Global, css } from '@emotion/core';
 import Router from './Router';
+import eot from '../assets/JI_Chubby_Caps.eot';
+import svg from '../assets/JI_Chubby_Caps.svg';
+import ttf from '../assets/JI_Chubby_Caps.ttf';
+import woff from '../assets/JI_Chubby_Caps.woff';
 
 const globalStyles = css`
+  @font-face {
+    font-family: 'JI Chubby Caps';
+    src:url('./fonts/JI_Chubby_Caps.eot?') format('eot'),
+      url('./fonts/JI_Chubby_Caps.woff') format('woff'),
+      url('./fonts/JI_Chubby_Caps.ttf') format('truetype'),
+      url('./fonts/JI_Chubby_Caps.svg#JIChubbyCaps') format('svg');
+  }
+
   html {
     overflow: hidden;
     height: 100%;
@@ -14,7 +26,7 @@ const globalStyles = css`
   }
 
   html, body {
-    color: #555555;
+    color: #191C1F;
     background-color: #2C3E50;
     font-family: sans-serif;
     margin: 0px;
