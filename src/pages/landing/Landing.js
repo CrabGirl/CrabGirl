@@ -8,7 +8,7 @@ import LandingStyle from './Landing.style';
 
 function LandingPage() {
   return (
-    <LandingStyle id="landing-page">
+    <LandingStyle className="standard-page" id="landing-page">
       <div className="content-section">
         <div className="border-box title">
           <img src={crabgirl}/>
@@ -16,14 +16,16 @@ function LandingPage() {
         </div>
       </div>
       <div className="smaller-content-section second-section">
-        <div className="border-box author">
-          <div className="text">
-            <div>About</div>
-            <div className="the">the</div>
-            <div>Author</div>
+        <a href="/about_the_author">
+          <div className="border-box author">
+            <div className="text">
+              <div>About</div>
+              <div className="the">the</div>
+              <div>Author</div>
+            </div>
+            <img src={author}/>
           </div>
-          <img src={author}/>
-        </div>
+        </a>
         <div className="border-box chapter">
           <div className="text">
             <div><span className="first">1</span><sup>st</sup></div>
