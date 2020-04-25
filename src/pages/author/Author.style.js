@@ -30,5 +30,15 @@ export default styled.div({
         marginBottom: '-8px',
       },
     },
+
+    '.border-box:not(.carolyn)': {
+      padding: '16px',
+    },
+
+    '.smaller-content-section': {
+      '&:last-of-type': {
+        marginBottom: '64px',
+      },
+    },
   },
 });
