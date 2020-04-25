@@ -40,5 +40,15 @@ export default styled.div({
         marginBottom: '64px',
       },
     },
+
+    '@media (max-width: 600px)': {
+      '.title': {
+        '.text': {
+          fontSize: '36px',
+          lineHeight: '32px',
+          marginBottom: '-20px',
+        },
+      },
+    },
   },
 });
