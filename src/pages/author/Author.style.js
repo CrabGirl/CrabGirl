@@ -24,10 +24,23 @@ export default styled.div({
       },
     },
 
+    '.content-section': {
+      fontSize: '22px',
+    },
+
+    '.first-section': {
+      display: 'flex',
+      flexDirection: 'row',
+
+      '.border-box:first-of-type': {
+        borderRightWidth: 0,
+      },
+    },
+
     '.carolyn': {
       img: {
-        width: '100%',
-        marginBottom: '-8px',
+        width: '320px',
+        marginBottom: '-10px',
       },
     },
 
@@ -35,7 +48,14 @@ export default styled.div({
       padding: '16px',
     },
 
-    '.smaller-content-section': {
+    '.second-section': {
+
+      '.border-box:first-of-type': {
+        borderBottomWidth: 0,
+      },
+    },
+
+    '.content-section': {
       '&:last-of-type': {
         marginBottom: '64px',
       },
@@ -47,6 +67,29 @@ export default styled.div({
           fontSize: '36px',
           lineHeight: '32px',
           marginBottom: '-20px',
+        },
+      },
+
+      '.first-section': {
+        display: 'block',
+
+        '.border-box:first-of-type': {
+          borderRightWidth: '6px',
+          marginBottom: '32px',
+
+          img: {
+            width: '100%',
+            marginBottom: '-10px',
+          },
+        },
+      },
+
+      '.second-section': {
+        display: 'block',
+
+        '.border-box:first-of-type': {
+          borderBottomWidth: '6px',
+          marginBottom: '32px',
         },
       },
     },
