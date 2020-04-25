@@ -1,11 +1,13 @@
 import React from 'react';
 import author from '../../../assets/images/author.png';
 import carolyn from '../../../assets/images/carolyn.jpg';
+import BackButton from '../../components/backButton';
 import AuthorStyle from './Author.style';
 
 function AuthorPage() {
   return (
     <AuthorStyle className="standard-page" id="author-page">
+      <BackButton/>
       <div className="content-section">
         <div className="border-box title">
           <img src={author}/>

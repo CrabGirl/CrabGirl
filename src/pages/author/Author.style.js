@@ -9,16 +9,16 @@ export default styled.div({
 
       '.text': {
         fontFamily: 'JI Chubby Caps, sans-serif',
-        fontSize: '60px',
+        fontSize: '52px',
         textAlign: 'center',
         marginBottom: '-16px',
-        paddingBottom: '50px',
+        paddingBottom: '42px',
       },
 
       img: {
         position: 'absolute',
         top: '-104px',
-        left: 0,
+        right: '16px',
         width: '100px',
         height: '100px',
       },
@@ -31,7 +31,7 @@ export default styled.div({
       },
     },
 
-    '.border-box:not(.carolyn)': {
+    '.border-box:not(.back-box):not(.carolyn)': {
       padding: '16px',
     },
 
