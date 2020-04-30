@@ -4,6 +4,7 @@ import crabgirl from '../../../assets/images/crabgirl.png';
 import contactcrab from '../../../assets/images/contactcrab.png';
 import jack from '../../../assets/images/jack.png';
 import love from '../../../assets/images/love.png';
+import pdf from '../../../assets/CrabGirlGraphicNovel.pdf';
 import LandingStyle from './Landing.style';
 
 function LandingPage() {
@@ -24,13 +25,15 @@ function LandingPage() {
           </div>
           <img src={author}/>
         </div>
-        <div className="border-box chapter">
-          <div className="text">
-            <div><span className="first">1</span><sup>st</sup></div>
-            <div>Chapter</div>
+        <a href={pdf} target="_blank">
+          <div className="border-box chapter">
+            <div className="text">
+              <div><span className="first">1</span><sup>st</sup></div>
+              <div>Chapter</div>
+            </div>
+            <img src={jack}/>
           </div>
-          <img src={jack}/>
-        </div>
+        </a>
       </div>
       <div className="smaller-content-section character-section">
         <div className="border-box character">

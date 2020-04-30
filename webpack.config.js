@@ -33,9 +33,16 @@ module.exports = (env, argv) => {
     module: {
       rules: [
         {
-          test: /\.(png|jpg)$/,
+          test: /\.(pdf|png|jpg)$/,
           exclude: /node_modules/,
-          use: ['file-loader']
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]'
+              }
+            }
+          ]
         },
         {
           test: /\.(woff|eot|ttf|svg)$/,
