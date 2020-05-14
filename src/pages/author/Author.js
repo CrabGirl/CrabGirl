@@ -1,5 +1,5 @@
 import React from 'react';
-import author from '../../../assets/images/author.png';
+import author from '../../../assets/images/author_selfie.png';
 import carolyn from '../../../assets/images/carolyn.jpg';
 import BackButton from '../../components/backButton';
 import AuthorStyle from './Author.style';

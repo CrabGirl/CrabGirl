@@ -5,7 +5,7 @@ export default styled.div({
   '&#author-page': {
     '.title': {
       position: 'relative',
-      marginTop: '100px',
+      marginTop: '116px',
 
       '.text': {
         fontFamily: 'JI Chubby Caps, sans-serif',
@@ -17,10 +17,10 @@ export default styled.div({
 
       img: {
         position: 'absolute',
-        top: '-104px',
+        top: '-154px',
         right: '16px',
-        width: '100px',
-        height: '100px',
+        width: '150px',
+        height: '150px',
       },
     },
 
