@@ -74,9 +74,9 @@ export default styled.div({
 
         img: {
           position: 'absolute',
-          top: '16px',
+          top: '-9px',
           right: '-54px',
-          height: '250px',
+          height: '275px',
         },
       },
     },
@@ -199,8 +199,9 @@ export default styled.div({
           marginTop: '16px',
 
           img: {
-            height: '150px',
+            top: '16px',
             right: '-38px',
+            height: '150px',
           },
 
           '.text': {
@@ -222,7 +223,7 @@ export default styled.div({
           marginLeft: 0,
 
           img: {
-            top: 0,
+            top: '14px',
             left: '-24px',
             height: '125px',
           },
