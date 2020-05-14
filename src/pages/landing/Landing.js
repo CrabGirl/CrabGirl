@@ -38,13 +38,15 @@ function LandingPage() {
         </a>
       </div>
       <div className="smaller-content-section character-section">
-        <div className="border-box character">
-          <img src={love}/>
-          <div className="text">
-            <div>Synopsis &</div>
-            <div className="second-line">Characters</div>
+        <a href="/characters">
+          <div className="border-box character">
+            <img src={love}/>
+            <div className="text">
+              <div>Synopsis &</div>
+              <div className="second-line">Characters</div>
+            </div>
           </div>
-        </div>
+        </a>
       </div>
       <div className="smaller-content-section contact-section">
         <a href="mailto:carolyn.hoffert@gmail.com">
