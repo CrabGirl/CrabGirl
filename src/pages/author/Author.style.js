@@ -5,7 +5,7 @@ export default styled.div({
   '&#author-page': {
     '.title': {
       position: 'relative',
-      marginTop: '116px',
+      marginTop: '136px',
 
       '.text': {
         fontFamily: 'JI Chubby Caps, sans-serif',
@@ -17,7 +17,7 @@ export default styled.div({
 
       img: {
         position: 'absolute',
-        top: '-154px',
+        top: '-174px',
         right: '16px',
         width: '150px',
       },
@@ -201,6 +201,7 @@ export default styled.div({
         '.quest': {
           '.img-wrapper': {
             display: 'block',
+            textAlign: 'center',
             marginBottom: '-14px',
 
             img: {
@@ -214,6 +215,7 @@ export default styled.div({
             display: 'block',
             textAlign: 'right',
             marginBottom: '-14px',
+            marginRight: '6px',
 
             img: {
               height: '80px',
@@ -222,11 +224,13 @@ export default styled.div({
         },
 
         '.cred': {
-          '.img-wrapper': {
-            display: 'block',
-            marginBottom: '-14px',
+          paddingBottom: '40px',
 
+          '.img-wrapper': {
             img: {
+              position: 'absolute',
+              bottom: '-42px',
+              left: '10px',
               height: '80px',
             },
           },
