@@ -26,7 +26,7 @@ export default styled.div({
       '&.character-section': {
         display: 'flex',
         flexWrap: 'wrap',
-        alignItems: 'flex-start',
+        alignItems: 'center',
 
         '> div:first-child': {
           marginRight: '32px',
@@ -81,7 +81,9 @@ export default styled.div({
         },
 
         '.character-photo': {
+          flex: 1,
           order: 1,
+          textAlign: 'center',
         },
       },
     },
